@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <link rel="stylesheet" href="main.css">
+
   <title>Frontend Mentor | Stats preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Get insights that help your business grow.
+<body class="grid-group">
 
-  Discover the benefits of data analytics and make better decisions regarding revenue, customer 
-  experience, and overall efficiency.
+  <main>
+    <article class="preview-card flex-group">
+      <div class="preview-card__content flex-group">
+        <h1 class="preview-card__component">Get <strong>insights</strong> that help your business grow.</h1>
+        <p class="preview-card__details">
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer
+          experience, and overall efficiency.
+        </p>
+        <section class="preview-card__stats flex-group">
+          <div class="flex-group">
+            <span class="preview-card__figure">10k+</span>
+            <span>companies</span>
+          </div>
+          <div class="flex-group">
+            <span class="preview-card__figure">314</span>
+            <span>templates</span>
+          </div>
+          <div class="flex-group">
+            <span class="preview-card__figure">12m+</span>
+            <span>queries</span>
+          </div>
+        </section>
+      </div>
 
-  10k+ companies
-  314 templates
-  12m+ queries
+      <div class="preview-card__picture-container">
+        <picture class="preview-card__picture">
+          <source sizes="(max-width:375px) 250px, 325px" srcset="images/image-header-desktop.jpg 540w,
+            images/image-header-mobile 654w">
+          <img class="preview-card__img" src="images/image-header-desktop.jpg"
+            alt="2 women working at a desk and one woman laughing at something off-screen">
+        </picture>
+      </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    </article>
+  </main>
+
 </body>
+
 </html>
